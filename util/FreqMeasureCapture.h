@@ -52,10 +52,10 @@
 #elif defined(__IMXRT1052__) || defined(__IMXRT1062__)
   #define CAPTURE_USE_FLEXPWM4_CH0A 22 // FlexPWM CH0-A is pin 22
 
-// Teensy 2.0
+// Teensy 2.0, Arduino Pro Micro
 #elif defined(__AVR_ATmega32U4__)
-  // #define CAPTURE_USE_TIMER1    // ICP1 is pin 22
-  #define CAPTURE_USE_TIMER3       // ICP3 is pin 10
+   #define CAPTURE_USE_TIMER1      // ICP1 is pin 22 (Teensy), ICP1 is pin 4 (Pro Micro)
+  // #define CAPTURE_USE_TIMER3    // ICP3 is pin 10
 
 // Teensy++ 1.0 & 2.0
 #elif defined(__AVR_AT90USB646__) || defined(__AVR_AT90USB1286__)

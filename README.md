@@ -1,4 +1,4 @@
-#FreqMeasure Library#
+## FreqMeasure Library
 
 FreqMeasure measures the elapsed time during each cycle of an input frequency.
 
